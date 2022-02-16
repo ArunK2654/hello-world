@@ -1,2 +1,2 @@
 # hello-world
-to create repository
+to create repository and learn
