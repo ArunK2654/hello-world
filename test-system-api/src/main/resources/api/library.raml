@@ -1,0 +1,20 @@
+#%RAML 1.0 Library
+usage:
+
+traits:
+    errorResponse: !include traits/error-response-trait.raml
+ 
+resourceTypes: 
+    resource: !include resourceType/resourceType.raml
+
+    order: 
+     is: errorResponse
+     type: {resource: {ref1: !include example/order-get-example.raml, ref2: !include dataType/order-post-dataType.raml}}
+    
+    item: 
+     is: errorResponse
+     type: {resource: {ref1: !include example/item-get-example.raml, ref2: !include dataType/item-post-dataType.raml}}
+
+    customer: 
+     is: errorResponse
+     type: {resource: {ref1: !include example/customer-get-example.raml, ref2: !include dataType/customer-post-dataType.raml}}

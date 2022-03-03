@@ -1,0 +1,15 @@
+#%RAML 1.0
+title: test-system-api
+description: To create system api
+
+uses:
+  lib: library.raml
+
+/order:
+  type: lib.order
+    
+/item:
+  type: lib.item
+
+/customer:
+  type: lib.customer

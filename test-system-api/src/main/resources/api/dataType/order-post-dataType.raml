@@ -1,0 +1,35 @@
+#%RAML 1.0 DataType
+
+ properties:
+          poNumber:
+            type: number
+            required: true
+          signatureRequiredFlag:
+            type: boolean
+            required: true
+            example: true
+          shipInstructions:
+            type: string
+            required: true
+            example: Don't break it
+          giftWrapFlag:
+            type: boolean
+            required: true
+            example: true
+          giftWrapMessage:
+            type: string
+            required: true
+            example: You rock!
+          currencyCode:
+            type: string
+            required: true
+            example: USD
+          subTotal:
+           type: number
+           required: true
+           example: 41.5
+          email:
+            type: string
+            required: true
+            pattern: ^.+@.+\..+$
+            example: test@test.com
